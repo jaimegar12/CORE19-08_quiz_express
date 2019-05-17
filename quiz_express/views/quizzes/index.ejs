@@ -1,0 +1,16 @@
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+<h1><%= title %></h1>
+<table>
+    <%for(var i in quizzes){ %>
+    <% var quiz = quizzes[i];%>
+    <tr>
+        <td>
+            <%= quiz.question %> : <%= quiz.answer%>
+        </td>
+    </tr>
+   <% } %>
+
+</table>
